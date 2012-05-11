@@ -1,5 +1,5 @@
 //
-//  TelephoneHandler.h
+//  CallHandler.h
 //  PhoneCallBlock
 //
 //  Created by Hui Li on 12-5-11.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TelephoneHandler : NSObject
+@interface CallHandler : NSObject
 
 @end
