@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	[CallHandler start];
 	// Do any additional setup after loading the view, typically from a nib.
+ 
+    
 }
 
 - (void)viewDidUnload

@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface CallHandler : NSObject
+{
+	
+}
 
+
++ (void)start;
 @end

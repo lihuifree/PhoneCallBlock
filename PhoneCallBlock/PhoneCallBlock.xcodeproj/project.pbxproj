@@ -16,7 +16,7 @@
 		F62D9E8D155CC22900FCCBF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D9E8C155CC22900FCCBF1 /* ViewController.m */; };
 		F62D9E90155CC22900FCCBF1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62D9E8E155CC22900FCCBF1 /* ViewController.xib */; };
 		F62D9E9B155CC31D00FCCBF1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62D9E9A155CC31D00FCCBF1 /* CoreTelephony.framework */; };
-		F62D9EA2155CC52600FCCBF1 /* TelephoneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D9EA1155CC52600FCCBF1 /* TelephoneHandler.m */; };
+		F62D9EAF155CCCA200FCCBF1 /* CallHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D9EAE155CCCA200FCCBF1 /* CallHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		F62D9E8C155CC22900FCCBF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F62D9E8F155CC22900FCCBF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		F62D9E9A155CC31D00FCCBF1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		F62D9EA0155CC52600FCCBF1 /* TelephoneHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelephoneHandler.h; sourceTree = "<group>"; };
-		F62D9EA1155CC52600FCCBF1 /* TelephoneHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelephoneHandler.m; sourceTree = "<group>"; };
+		F62D9EAD155CCCA200FCCBF1 /* CallHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallHandler.h; sourceTree = "<group>"; };
+		F62D9EAE155CCCA200FCCBF1 /* CallHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,8 @@
 				F62D9E8C155CC22900FCCBF1 /* ViewController.m */,
 				F62D9E8E155CC22900FCCBF1 /* ViewController.xib */,
 				F62D9E80155CC22900FCCBF1 /* Supporting Files */,
-				F62D9EA0155CC52600FCCBF1 /* TelephoneHandler.h */,
-				F62D9EA1155CC52600FCCBF1 /* TelephoneHandler.m */,
+				F62D9EAD155CCCA200FCCBF1 /* CallHandler.h */,
+				F62D9EAE155CCCA200FCCBF1 /* CallHandler.m */,
 			);
 			path = PhoneCallBlock;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 				F62D9E86155CC22900FCCBF1 /* main.m in Sources */,
 				F62D9E8A155CC22900FCCBF1 /* AppDelegate.m in Sources */,
 				F62D9E8D155CC22900FCCBF1 /* ViewController.m in Sources */,
-				F62D9EA2155CC52600FCCBF1 /* TelephoneHandler.m in Sources */,
+				F62D9EAF155CCCA200FCCBF1 /* CallHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +204,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hongbin Suo (P739FP4WL8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -219,6 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "C911DD9E-94A4-466C-8FBD-8B42A8E5B48B";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -228,6 +230,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hongbin Suo (P739FP4WL8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -237,6 +240,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "C911DD9E-94A4-466C-8FBD-8B42A8E5B48B";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
